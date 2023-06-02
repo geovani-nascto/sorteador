@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #eee;
+}
+
+header{
+    background-color: #04133d;
+    display: flex;justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+header img{
+    width: 150px;
+}
+
+header h1{
+    color: #fff;
+}
