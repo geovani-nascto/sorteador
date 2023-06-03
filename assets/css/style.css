@@ -22,3 +22,90 @@ header img{
 header h1{
     color: #fff;
 }
+
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+section{
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #808080;
+    padding: 30px;
+    width: 600px;
+    color: #808080;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+section h2{
+    font-weight: 400;
+}
+
+section p{
+    margin: 10px 0;
+}
+
+.text-left{
+    text-align: left;
+}
+
+section label{
+    display: none;
+}
+
+section textarea{
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+
+}
+
+section button{
+    background-color: #1480fa;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.resultado{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(4 20 62 / 89%);
+    transition: 0.5s;
+}
+
+.resultado.mostrarResultado{
+    left: 0;
+    transition: 0.5s;
+}
+
+footer{
+    height: 400px;
+    background-image: url('../img/fundo-rodape.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section button:hover{
+
+}
+
+section hr{
+
+}
