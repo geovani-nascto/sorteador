@@ -14,21 +14,46 @@
         <h1>Sorteador Online!</h1>
     </header>
     <main class="app">
-        <section>
-            <h2>Sortear nomes</h2>
-            <p>Crie o sorteio de <strong>nomes</strong> e <strong>números</strong> facilmente utilizando essa aplicação. Você poderá salvar o sorteio e compartilhar o link com outras pessoas.</p>
-            <hr>
-            <p class="text-left">Adicione nomes</p>
-            <form class="form" method="GET" action="index.html">
-                <label for="inputNames">Adicione os nomes para o sorteio</label>
-                <textarea name="inputNames" id="inputNames" placeholder="Adicione nomes separador por vírgula. Exemplo: João, Maria"></textarea>
-                <button class="btnDraw">Sortear</button>
-            </form>
-            <div class="result">
-                <span class="closeBtn">X</span>
-                <p class="result--final">Resultado:</p>
+        <div class="tab-container">
+            <ul class="options">
+                <li id="option1" class="option option-active">Sortear Nomes</li>
+                <li id="option2" class="option">Sortear Número</li>
+            </ul>
+            <div class="contents">
+                <section id="content1" class="content content-active">
+                    <h2>Sortear nomes</h2>
+                    <p>Crie o sorteio de <strong>nomes</strong> e <strong>números</strong> facilmente utilizando essa aplicação. Você poderá salvar o sorteio e compartilhar o link com outras pessoas.</p>
+                    <hr>
+                    <p class="text-left">Adicione nomes</p>
+                    <form class="form" method="GET" action="index.html">
+                        <label for="inputNames">Adicione os nomes para o sorteio</label>
+                        <textarea name="inputNames" id="inputNames" placeholder="Adicione nomes separador por vírgula. Exemplo: João, Maria"></textarea>
+                        <button class="btnDraw">Sortear</button>
+                    </form>
+                    <div class="result">
+                        <span class="closeBtn">X</span>
+                        <p class="result--final">Resultado:</p>
+                    </div>
+                </section>
+
+                <section id="content2" class="content">
+                    <h2>Sortear Número</h2>
+                    <p>Crie o sorteio de <strong>nomes</strong> e <strong>números</strong> facilmente utilizando essa aplicação. Você poderá salvar o sorteio e compartilhar o link com outras pessoas.</p>
+                    <hr>
+                    <p class="text-left">Adicione nomes</p>
+                    <form class="form" method="GET" action="index.html">
+                        <label for="inputNames">Adicione os nomes para o sorteio</label>
+                        <textarea name="inputNames" id="inputNames" placeholder="Adicione nomes separador por vírgula. Exemplo: João, Maria"></textarea>
+                        <button class="btnDraw">Sortear</button>
+                    </form>
+                    <div class="result">
+                        <span class="closeBtn">X</span>
+                        <p class="result--final">Resultado:</p>
+                    </div>
+                </section>
             </div>
-        </section>
+            
+        </div>
     </main>
     <footer>
 
