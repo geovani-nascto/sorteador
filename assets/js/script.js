@@ -9,7 +9,8 @@ const popUpResult = document.querySelector('.result');
 //Botão para fechar popup
 const btnClose = document.querySelector('.closeBtn')
 
-function getFormData(){
+function getFormData(event){
+    event.preventDefault();
     // Pegar valor digitado no textarea
     const inputValue = textarea.value;
     // Guardará os nomes digitados em uma lista, sem considerar a ','
