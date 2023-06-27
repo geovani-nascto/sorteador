@@ -1,7 +1,7 @@
 //Botão para sortear
 // const btnDraw = document.querySelector('.btnDraw');
-const btnDrawNames = document.getElementById('btnDrawNames')
-const btnDrawNumbers = document.getElementById('btnDrawNumbers')
+const btnDrawNames = document.getElementById('btn-draw-names')
+const btnDrawNumbers = document.getElementById('btn-draw-numbers')
 //Campo de textarea
 const textarea = document.querySelector('textarea');
 //O parágrafo que aparece o resultado

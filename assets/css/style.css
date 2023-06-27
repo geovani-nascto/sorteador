@@ -44,6 +44,9 @@ header h1{
     list-style-type: none;
     width: 100%;
     height: 15%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .option{
@@ -53,11 +56,25 @@ header h1{
     border: solid 1px #ccc;
     color: #444;
     cursor: pointer;
+    border-bottom: 4px solid #1a337e;
+}
+
+#option1{
+    border: none;
+    border-radius: 5px 0 0 0;
+    border-bottom: 3px solid #1a337e;
+}
+
+#option2{
+    border: none;
+    border-radius: 0 5px 0 0;
+    border-bottom: 3px solid #1a337e;
 }
 
 .option.option-active{
     background-color: #1a337e;
     border-bottom: 1px solid rgba(7, 63, 95, .4);
+    color: #fff;
 }
 
 .content{
@@ -75,24 +92,24 @@ header h1{
     display: block;
 }
 
-section h2{
+.content h2{
     font-weight: 400;
 }
 
-section p{
+.content p{
     margin: 10px 0;
 }
 
-.text-left{
+/* .text-left{
     text-align: left;
-}
+} */
 
-section label{
+.content label{
     display: block;
     margin: 15px 0;
 }
 
-section textarea{
+.content textarea{
     padding: 10px;
     width: 100%;
     height: 150px;
@@ -114,7 +131,7 @@ section button{
     border-radius: 5px;
 }
 
-.result{
+#result-name{
     position: absolute;
     top: 0;
     left: -100%;
@@ -134,7 +151,7 @@ section button{
     transition: 0.5s;
 }
 
-.result.showResult{
+#result-name.showResult{
     left: 0;
     transition: 0.5s;
 }
@@ -144,7 +161,8 @@ section button{
     transition: 0.5s;
 }
 
-.result span{
+#result-name span,
+#result-number span{
     float: right;
     margin: 20px;
     color: #fff;
@@ -159,7 +177,8 @@ section button{
     cursor: pointer;
 }
 
-.result p{
+#result-name p,
+#result-number p{
     text-align: center;
     color: #fff;
     font-size: 30px;
