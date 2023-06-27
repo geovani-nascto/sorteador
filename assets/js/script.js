@@ -1,5 +1,7 @@
 //Botão para sortear
-const btnDraw = document.querySelector('.btnDraw');
+// const btnDraw = document.querySelector('.btnDraw');
+const btnDrawNames = document.getElementById('btnDrawNames')
+const btnDrawNumbers = document.getElementById('btnDrawNumbers')
 //Campo de textarea
 const textarea = document.querySelector('textarea');
 //O parágrafo que aparece o resultado
@@ -37,7 +39,7 @@ option2.addEventListener('click', () => {
     changeDrawer();
 })
 
-function getFormData(event) {
+function getFormDataNames(event) {
     event.preventDefault();
     // Pegar valor digitado no textarea
     const inputValue = textarea.value;
@@ -56,8 +58,28 @@ function getFormData(event) {
     textarea.value = '';
 }
 
+function getFormDataNumbers(event) {
+    event.preventDefault();
+    // Pegar valor digitado no textarea
+    const inputValue = textarea.value;
+    // Guardará os nomes digitados em uma lista, sem considerar a ','
+    const numbersList = inputValue.split(',');
+    // Receberá a quantidade de nomes digitados
+    const arrayLength = numbersList.length;
+    // Guardará o número sorteado, referente ao nome escrito sorteado
+    const numberPosition = generateRandonNumber(arrayLength);
+    // Guardará o nome referente ao número sorteado
+    const number = numbersList[numberPosition];
+    // Mostrará o nome sorteado
+    showResult(number);
 
-btnDraw.addEventListener('click', getFormData);
+    //Limpa o campo para um novo sorteio
+    textarea.value = '';
+}
+
+
+btnDrawNames.addEventListener('click', getFormDataNames);
+btnDrawNumbers.addEventListener('click', getFormDataNumbers);
 
 // O tamanho do array será importante para sortear um valor o utilizando como o máximo
 function generateRandonNumber(arrayLength) {
@@ -67,6 +89,11 @@ function generateRandonNumber(arrayLength) {
 
 function showResult(name) {
     result.innerText = `Resultado: ${name}`;
+    popUpResult.classList.add('showResult');
+}
+
+function showResult(number) {
+    result.innerText = `Resultado: ${number}`;
     popUpResult.classList.add('showResult');
 }
 

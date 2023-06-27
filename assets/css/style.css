@@ -124,8 +124,23 @@ section button{
     transition: 0.5s;
 }
 
+#result-number{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(4 20 62 / 89%);
+    transition: 0.5s;
+}
+
 .result.showResult{
     left: 0;
+    transition: 0.5s;
+}
+
+#result-number.showResult{
+    right: 0;
     transition: 0.5s;
 }
 
