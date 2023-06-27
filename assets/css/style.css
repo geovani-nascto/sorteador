@@ -55,7 +55,7 @@ header h1{
     cursor: pointer;
 }
 
-.option-active{
+.option.option-active{
     background-color: #1a337e;
     border-bottom: 1px solid rgba(7, 63, 95, .4);
 }
@@ -71,7 +71,7 @@ header h1{
     display: none;
 }
 
-.content-active{
+.content.content-active{
     display: block;
 }
 
