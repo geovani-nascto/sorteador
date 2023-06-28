@@ -42,13 +42,23 @@
                     <hr>
                     <!-- <p class="text-left">Adicione nomes</p> -->
                     <form class="form" method="GET" action="index.html">
-                        <label for="inputNumbers">Adicione os números para o sorteio</label>
-                        <textarea name="inputNumbers" id="inputNumbers" placeholder="Adicione nomes separador por vírgula. Exemplo: João, Maria"></textarea>
+                        <!-- <label for="inputNumbers">Adicione os números para o sorteio</label> -->
+                        <!-- <textarea name="inputNumbers" id="inputNumbers" placeholder="Adicione nomes separador por vírgula. Exemplo: João, Maria"></textarea> -->
+                        <div class="containerNumbersDraw">
+                            <div class="numbersDraw">
+                                <label for="quantity-numbers">Sortear</label>
+                                <input type="number" name="quantity" id="quantity-numbers" value="1">
+                                <label for="min">De</label>
+                                <input type="number" name="min" id="min" value="1">
+                                <label for="max">Até</label>
+                                <input type="number" name="max" id="max" value="100">
+                            </div>
+                        </div>
                         <button class="btnDraw" id="btn-draw-numbers">Sortear</button>
                     </form>
                     <div class="result" id="result-number">
                         <span class="closeBtn" id="closeBtnNumber">X</span>
-                        <p class="result--number">Resultado:</p>
+                        <p class="result--final" id="result--number">Resultado:</p>
                     </div>
                 </section>
             </div>
@@ -58,6 +68,6 @@
 
     </footer>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/drawer.js"></script>
 </body>
 </html>
