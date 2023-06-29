@@ -3,7 +3,6 @@ const btnDrawNames = document.getElementById('btn-draw-names');
 const btnDrawNumbers = document.getElementById('btn-draw-numbers');
 // Campos de textarea e input
 const textareaNames = document.getElementById('inputNames');
-const quantityNumbers = document.getElementById('quantity-numbers');
 const minNumber = document.getElementById('min');
 const maxNumber = document.getElementById('max');
 // O parágrafo que exibe o resultado
@@ -44,7 +43,16 @@ option2.addEventListener('click', () => {
     changeDrawer();
 })
 
+// textareaNumbers.addEventListener('input', function(){
+//     //Remove caracteres que não sejam númericos
+//     textareaNumbers.value = textareaNumbers.value.replace(/[^0-9]/g, '')
+// })
+
+// SORTEIO DE NOMES
+
+// O tamanho do array será importante para sortear um valor o utilizando como o máximo
 function generateRandonNumber(arrayLength) {
+     // Irá retornar um número inteiro aleatório de acordo com o tamanho do array, sendo o zero o primeiro valor (?)
     return Math.floor(Math.random() * arrayLength);
 }
 
@@ -60,26 +68,47 @@ function closePopUp() {
 
 function getFormDrawNames(event) {
     event.preventDefault();
+    // Pegar valor digitado no textarea
     const inputValue = textareaNames.value;
+    // Guardará os nomes digitados em uma lista, sem considerar a ','
     const namesList = inputValue.split(',');
+    // Receberá a quantidade de nomes digitados
     const arrayLength = namesList.length;
+    // Guardará o número sorteado, referente ao nome escrito sorteado
     const namePosition = generateRandonNumber(arrayLength);
+    // Guardará o nome referente ao número sorteado
     const name = namesList[namePosition];
+    // Mostrará o nome sorteado
     showResultName(name);
 
+    //Limpa o campo para um novo sorteio
     textareaNames.value = '';
 }
 
 btnDrawNames.addEventListener('click', getFormDrawNames);
 btnCloseName.addEventListener('click', closePopUp);
 
+
+//SORTEIO DE NÚMEROS
+
 function getFormDrawNumbers(event){
     event.preventDefault();
+    const quantityNumbers = parseInt(document.getElementById('quantity-numbers').value);
+
+    // if (quantityNumbers <= 0) {
+    //     console.log('A quantidade de números deve ser maior que zero.');
+    //     return;
+    //   }
     const min = parseInt(minNumber.value);
     const max = parseInt(maxNumber.value);
-    const resultNumberFinal = Math.floor(Math.random() * (max - min + 1) + min);
 
-    resultNumber.innerText = `Resultado: ${resultNumberFinal}`;
+    const numbersList = []
+    for(let i = 0; i < quantityNumbers; i++){
+        const randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
+        numbersList.push(randomNumber)
+    }
+
+    resultNumber.innerText = `Resultado: ${numbersList.join(', ')}`;
     popUpResultNumber.classList.add('showResult');
 }
 
