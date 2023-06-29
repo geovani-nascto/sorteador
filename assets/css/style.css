@@ -25,6 +25,7 @@ header h1{
 }
 
 .app{
+    margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +176,7 @@ input[type=number]::-webkit-outer-spin-button {
     top: 0;
     left: -100%;
     width: 100%;
-    height: 100%;
+    height: 100%; /*Usar min-height para grandes sorteios?*/
     background-color: rgb(4 20 62 / 89%);
     transition: 0.5s;
 }
@@ -202,7 +203,9 @@ input[type=number]::-webkit-outer-spin-button {
 
 #result-name span,
 #result-number span{
-    float: right;
+    /* float: right; */
+    position: absolute;
+    right: 0;
     margin: 20px;
     color: #fff;
     font-size: 20px;
