@@ -8,7 +8,7 @@
     <title>Sortea aí! | Sorteio de nomes e números</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -34,12 +34,15 @@
                     </form>
                     <div class="result" id="result-name">
                         <span class="closeBtn" id="closeBtnName">X</span>
-                        <p class="result--final" id="result--name">Resultado:</p>
-                        <button>Refazer sorteio</button>
                         <div class="buttons">
+                            <button><i class="fa-solid fa-arrow-rotate-right"></i> Refazer sorteio</button>
+                            <button><i class="fa-solid fa-arrow-down"></i></i>Baixar resultado</button>
+                        </div>
+                        <p class="result--final" id="result--name">Resultado:</p>
+                        <!-- <div class="buttons">
                             <button>Refazer sorteio</button>
                             <button>Baixar resultado</button>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
 
