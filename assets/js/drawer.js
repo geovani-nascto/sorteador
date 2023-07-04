@@ -22,6 +22,10 @@ const option2 = document.getElementById('option2');
 const content1 = document.getElementById('content1');
 // Sessão com o sorteador de números
 const content2 = document.getElementById('content2');
+// Variáveis globais para armazenar os valores do sorteio atual
+let currentNamesList = [];
+let currentArrayLength = 0;
+
 
 let choose = 1;
 
@@ -64,6 +68,8 @@ function showResultName(name) {
 function closePopUp() {
     popUpResultName.classList.remove('showResult');
     popUpResultNumber.classList.remove('showResult');
+    //Limpa o campo para um novo sorteio
+    textareaNames.value = '';
 }
 
 function getFormDrawNames(event) {
@@ -71,23 +77,39 @@ function getFormDrawNames(event) {
     // Pegar valor digitado no textarea
     const inputValue = textareaNames.value;
     // Guardará os nomes digitados em uma lista, sem considerar a ','
-    const namesList = inputValue.split(',');
+    currentNamesList = inputValue.split(',');
     // Receberá a quantidade de nomes digitados
-    const arrayLength = namesList.length;
+    currentArrayLength = currentNamesList.length;
     // Guardará o número sorteado, referente ao nome escrito sorteado
-    const namePosition = generateRandonNumber(arrayLength);
-    // Guardará o nome referente ao número sorteado
-    const name = namesList[namePosition];
+    const namePosition = generateRandonNumber(currentArrayLength);
+  // Guardará o nome referente ao número sorteado
+  const name = currentNamesList[namePosition];
     // Mostrará o nome sorteado
     showResultName(name);
 
-    //Limpa o campo para um novo sorteio
-    textareaNames.value = '';
 }
 
 btnDrawNames.addEventListener('click', getFormDrawNames);
 btnCloseName.addEventListener('click', closePopUp);
 
+function redoDraw() {
+    if (choose === 1) { //Sorteio de nomes escolhido
+      if (currentArrayLength > 0) {
+        const namePosition = generateRandonNumber(currentArrayLength);
+        const name = currentNamesList[namePosition];
+        showResultName(name);
+      } else {
+        console.log('Nenhum nome foi sorteado anteriormente.');
+      }
+    } else if (choose === 2) { //Soteio de números escolhido
+      if(quantityNumbers > 0){
+          const numbersList = []
+      }
+    }
+  }
+  
+  const btnTryDraw = document.getElementById('btn-try-draw');
+  btnTryDraw.addEventListener('click', redoDraw);
 
 //SORTEIO DE NÚMEROS
 
