@@ -13,11 +13,11 @@ header{
     background-color: #04133d;
     display: flex;justify-content: center;
     align-content: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 header img{
-    width: 150px;
+    width: 100px;
 }
 
 header h1{
@@ -94,7 +94,7 @@ header h1{
 }
 
 .content h2{
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .content p{
