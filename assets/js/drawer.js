@@ -102,14 +102,14 @@ function redoDraw() {
         console.log('Nenhum nome foi sorteado anteriormente.');
       }
     } else if (choose === 2) { //Soteio de números escolhido
-      if(quantityNumbers > 0){
-          const numbersList = []
-      }
+      getFormDrawNumbers(event);
     }
   }
   
   const btnTryDraw = document.getElementById('btn-try-draw');
+  const btnTryDrawNumber = document.getElementById('btn-try-draw-number');
   btnTryDraw.addEventListener('click', redoDraw);
+  btnTryDrawNumber.addEventListener('click', redoDraw);
 
 //SORTEIO DE NÚMEROS
 
