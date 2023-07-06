@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./assets/img/ldr-enterprises.png">
+    <img src="./assets/img/sorteai-logo-blue.png">
 </h1>
 
 <h1>
