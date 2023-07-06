@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./assets/img/sorteai-logo-blue.png">
+    <img src="https://ik.imagekit.io/geovani/sorteador/sorteai-logo-blue.png?updatedAt=1688667860956">
 </h1>
 
 <h1>
