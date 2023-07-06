@@ -2,7 +2,7 @@
     <img src="https://ik.imagekit.io/geovani/sorteador/sorteai-logo-blue.png?updatedAt=1688667860956">
 </h1>
 
-<h1>
+<h1 align="center">
     <img src="https://ik.imagekit.io/geovani/sorteador/Captura_de_tela_de_2023-07-06_15-13-13.png?updatedAt=1688667559205">
 </h1>
 
