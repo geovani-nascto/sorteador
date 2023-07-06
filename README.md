@@ -17,15 +17,15 @@
 <p> Versão criada com base na construída pelo evento da Kenzie Academy</p>
 
 ## Versão Atual - Sorteador de Nomes
-<img src="https://ik.imagekit.io/geovani/sorteador/Captura_de_tela_de_2023-07-05_14-28-04.png?updatedAt=1688578136050">
+<img src="https://ik.imagekit.io/geovani/sorteador/Captura_de_tela_de_2023-07-06_15-13-13.png?updatedAt=1688667559205">
 <p> Versão atualizada autoral. Tela mostrando sorteador de nomes com aba para alternar entre os tipos de sorteadores</p>
 
 ## Versão Atual - Sorteador de Números
-<img src="https://ik.imagekit.io/geovani/sorteador/Captura_de_tela_de_2023-07-06_15-13-13.png?updatedAt=1688667559205">
+<img src="https://ik.imagekit.io/geovani/sorteador/Captura_de_tela_de_2023-07-06_15-13-46.png?updatedAt=1688667559242">
 <p> Versão criada autoral. Tela mostrando sorteador de números com aba para alternar entre os tipos de sorteadores</p>
 
 ## Tela de resultados
-<img src="https://ik.imagekit.io/geovani/sorteador/Captura_de_tela_de_2023-07-06_15-13-13.png?updatedAt=1688667559205">
+<img src="https://ik.imagekit.io/geovani/sorteador/Captura_de_tela_de_2023-07-06_15-14-26.png?updatedAt=1688667559204">
 <p> Exemplo de uma das telas de resultados, onde contém também três botões, sendo um para fechar o pop-up (em forma de X), botão para sortear novamente e outro para baixar o resultado do sorteio em formato PDF (através da biblioteca <a href='https://ekoopmans.github.io/html2pdf.js/'>html2pdf</a></p>
 
 ## Ferramentas
