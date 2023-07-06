@@ -255,17 +255,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 footer{
-    height: 400px;
+    height: 150px;
     background-image: url('https://ik.imagekit.io/geovani/footer-background-01.jpg_ssl_1?updatedAt=1688574682649');
     background-size: cover;
     background-attachment: fixed;
     filter: saturate(1.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0 10px;
 }
 
-section button:hover{
-
-}
-
-section hr{
-
+footer p{
+    text-align: center;
 }
